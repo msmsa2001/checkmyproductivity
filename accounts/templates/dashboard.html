@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">{Mumbai Coding Club}</div>
+        <div class="icon_username">
+            <div class="userName">
+                <h1>{{user.first_name}}</h1>
+            </div>
+        <div class="icon">
+            <img src="{% static 'images/icon.jpg' %}" alt="">
+            <ul class="home_card">
+                <li>Profile</li>
+                <li>Setting</li>
+                <a href="/signout"><li>Logout</li></a>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section class="Home_page">
+        <div class="home_text">
+            <h1>Welcome To <span class="Text_h1">Study Pallet<span></h1>
+        </div>
+        <div class="home_contain">
+            <div class="home_contain_box">
+                <a href=""><div class="topic_heading">Syllabus</div></a>
+                <a href=""><div class="topic_heading">Quiz</div></a>
+                <a href="/attendance/"><div class="topic_heading">Attendance</div></a>
+                <a href="resume/"><div class="topic_heading">CV Builder</div></a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
