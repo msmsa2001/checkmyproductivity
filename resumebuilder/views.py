@@ -6,7 +6,6 @@ from django.contrib import messages
 from django.http import HttpResponse
 from resumebuilder.resumes import generateResume
 from django.core.files.storage import FileSystemStorage
-from docx2pdf import convert
 
 
 

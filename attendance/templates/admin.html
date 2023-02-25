@@ -69,12 +69,12 @@
   <body>
     
       <div class="row">
-          <div class="col-2" style="background: rgb(73, 7, 71);">
-              <div style="text-align: center;"><a  href="{% url 'dashboard' %}" ><button style="background-color:rgb(219, 205, 213);">Back</button> </a> </div>
-              <div style="text-align: center;"><a  href="{% url 'All-Attendance' %}" ><button style="background-color:rgb(219, 205, 213);">Attendance</button> </a> </div>
+          <div class="col-2" style="background: whitesmoke;">
+              <div style="text-align: center;"><a  href="{% url 'dashboard' %}" ><button class="btn my-2" style="background-color:rgb(219, 205, 213);">Back</button> </a> </div>
+              <!-- <div style="text-align: center;"><a  href="{% url 'All-Attendance' %}" ><button  class=" btn"style="background-color:rgb(219, 205, 213);">Attendance</button> </a> </div> -->
               
             </div>
-            <div class="col" style="background: rgb(201, 184, 214);">
+            <div class="col" style="background: powderblue;">
         <div class="container">
     
             <div class="boxContainer">
@@ -84,7 +84,7 @@
                     <form action="search" method="get">
                         <div style="text-align: center;">
                         <input type="text" name="username" id="search" placeholder="search...." />
-                        <a  href="{% url 'search' %}" ><button style="background-color:success;">search</button> </a></div></form>
+                        <a  href="{% url 'search' %}" ><button  class="btn btn-warning  " style="background-color:success;">search</button> </a></div></form>
                   </td>
                   <td>
                     <a href="#"><i class="material-icons"></i></a>
